@@ -1,65 +1,48 @@
-# _Airspace_ for Jekyll
-![screenshot](screenshots/home.png "Description goes here")
+# simplest
 
-This Jekyll theme is a port of [ThemeFisher's](https://themefisher.com) [Airspace template](https://themefisher.com/products/airspace-free-bootstrap-website-template/). It is released under ThemeFisher's [license](https://themefisher.com/license) , which requires attribution. Concern about the licnese please contact with [them](mailto:themefisher@gmail.com)
-
-## Usage
-To start your project, [fork this respository](https://github.com/ndrewtl/airspace-jekyll/fork), put in your content, and go!
-
-## Examples
-Here are some projects that have used this Jekyll Theme:
-* [BOYUAN Open Source 博辕开源](https://boyuanitsm.github.io)
-* [Campus VC](https://mrchildneo.github.io/mrchildneo/)
-* [Mãos de amar](https://www.maosdeamar.com.br/)
-* [ATK Team](http://www.atksec.com/)
-* [Coding Club](https://ourcodingclub.github.io/)
-* [Dev Empathy Book Club](http://www.devempathybook.club/)
-* [DKAN Open Data Catalog](http://getdkan.com) (modified version of this theme)
-
-## Steps for Setup:
-
-### Make sure you have Ruby
-
-First, make sure you have [Ruby](https://www.ruby-lang.org/en/) installed. You can confirm this by running `ruby -v` on the command line:
-
-```sh
-$ ruby -v
-ruby [version number] (date) [your platform]
-```
-
-If you get something like `"Error, command not found"` visit the link above and
-install Ruby for your platform.
+Simple Jekyll theme
 
 
-### Make sure you have Bundler
 
-Next, make sure you have [Bundler](https://bundler.io) installed. Just like
-above, run `bundle -v` on the command line:
+> :warning:
+  This theme requires ruby and rubygems installed
 
-```sh
-$ bundle -v
-bundle [version number]
-```
+* [x] Clean layout
+* [x] Resposive layout
+* [x] Preprocessor SASS
+* [x] HTML minified
+* [x] CSS minified
+* [x] No Javascript
+* [x] Pagination
+* [x] Syntax highlight
+* [x] Author config
+* [x] Comments with Disqus
+* [x] Share posts
 
-If you get `"Error, command not found"` run `gem install bundler` to install it
-using RubyGems.
+---
 
-### Run this repository
+### Start in 4 steps
 
-Clone the repository, and `cd` into it:
-```sh
-$ git clone https://github.com/ndrewtl/airspace-jekyll.git
-$ cd airspace-jekyll
-```
+1. Download or clone repo `git clone git@github.com:nandomoreirame/simplest.git`
+2. Enter the folder: `cd simplest/`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `jekyll serve`
 
-Install dependencies locally:
-```sh
-$ bundle install --path vendor/bundle
-```
+Access, [localhost:4000/simplest](http://localhost:4000/simplest)
 
-This should install a local copy of jekyll.
+---
 
-Now run the server:
-```sh
-$ ./vendor/bundle/ruby/#{YOUR_RUBY_VERSION}/bin/jekyll server
-```
+### Demo and Download
+
+[Demo](https://nandomoreirame.github.io/simplest/)
+[Download](https://github.com/nandomoreirame/simplest/archive/master.zip)
+
+![simplest - free Jekyll theme](/screenshot.png)
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).
+
+Enjoy :yum:

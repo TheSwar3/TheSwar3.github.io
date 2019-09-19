@@ -1,37 +1,60 @@
 
-exclude:
-  - "/vendor/"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "LICENSE.md"
-  - "*.gemspec"
-
-keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
-
-
-# Site settings
-title: Airspace
-subtitle: "A free HTML5 agency template"
-url: "https://coryaiden.com" # the base hostname & protocol for your site
-# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
+# SEO settings
+title: Simplest
+description: "A free Jekyll theme for download"
+keywords: "Jekyll, theme, free, download, SEO, blog, web"
+url: http://coryaiden.com
 baseurl: ""
-cover: "/assets/cover.png"
-logo: "/assets/logo.png"
+# baseurl: null
+
+google_analytics: UA-52446115-1
+repo: http://github.com/nandomoreirame/simplest
+disqus_shortname: "nandothemes"
 
 # Build settings
-markdown: kramdown
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : pygments
 
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+paginate: 4
+paginate_path: "/page/:num/"
+comments: true
 
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+source: source
+destination: _site
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : Fernando Moreira
+  job      : Frontend Engineer
+  bio      : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  thumb    : /images/author.jpg
+  email    : nandomoreira.me@gmail.com
+  url      : http://nandomoreira.me
+  github   : http://github.com/nandomoreirame
+  twitter  : http://twitter.com/nandomoreirame
+  facebook : http://facebook.com/fernando.dev
+  linkedin : http://linkedin.com/in/nandomoreirame
+
+# social settings
+og_locale: "pt_BR"
+twitter_card: "summary_large_image"
+twitter_site: "@nandomoreirame"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
